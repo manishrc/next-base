@@ -8,9 +8,16 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:reset": "prisma migrate reset",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio",
+    "prisma:deploy": "prisma migrate deploy",
+    "prisma:seed": "node ./prisma/seed.ts"
   },
   "dependencies": {
+    "@prisma/client": "^4.3.1",
     "@segment/snippet": "^4.15.3",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.7",
@@ -33,6 +40,10 @@
     "jest-environment-jsdom": "^29.0.3",
     "mailing": "^0.8.1",
     "postcss": "^8.4.16",
+    "prisma": "^4.3.1",
     "tailwindcss": "^3.1.8"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   }
 }
