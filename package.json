@@ -24,7 +24,7 @@
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.4",
     "@prisma/client": "^4.3.1",
-    "@segment/snippet": "^4.15.3",
+    "@segment/analytics-next": "^1.43.0",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.7",
     "mailing-core": "^0.8.1",
